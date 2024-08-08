@@ -1,0 +1,170 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color :lightcyan;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .hero {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: black;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        .hero a {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 2rem;
+            background-color :lightslategray;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .about, .services, .contact {
+            padding: 2rem 0;
+            
+        }
+        .about img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Services Section Styles */
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.service {
+    text-align: center;
+    flex: 1;
+    min-width: 200px; /* Ensures items don't get too small */
+    margin: 1rem;
+}
+
+.service img {
+    width: 80px; /* Adjust as needed */
+    height: auto;
+}
+
+.service h3 {
+    margin: 0.5rem 0;
+}
+           .contact form {
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               gap: 1rem;
+               font-weight: normal;
+           }
+    
+           .contact form input,
+           .contact form textarea {
+               margin-bottom: 0.5rem;
+               padding: 0.75rem;
+               border: 2px solid #888;
+               border-radius: 10px;
+               background-color: #f9f9f9;
+           }
+    
+           .service img.lalu {
+               width: 100px;
+               /* Adjust size as needed */
+               height: auto;
+               border-radius: 10px;
+               border: 2px solid #ccc;
+           }
+    
+           .contact form button {
+               grid-column: span 2;
+               padding: 0.75rem;
+               background-color: darkslategray;
+               font-weight: normal;
+               color: #fff;
+               border: none;
+               border-radius: 10px;
+               cursor: pointer;
+               transition: background-color 0.3s ease;
+           }
+    
+           .contact form button:hover {
+               background-color: #2f4f4f;
+           }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+        
+        @media (min-width: 768px) {
+            .container {
+                width: 80%;
+            }
+        
+            header h1 {
+                font-size: 2rem;
+            }
+        
+            nav ul li {
+                display: inline;
+                margin: 0 1rem;
+            }
+        
+            .services {
+                flex-direction: row; /* Align items horizontally */
+                justify-content: space-around;
+            }
+        
+            .service img {
+                width: 80px;
+            }
+        }
+        
+        /* Desktop View (Min-width 1024px) */
+        @media (min-width: 1024px) {
+            .container {
+                width: 70%;
+            }
+        
+            header h1 {
+                font-size: 2.5rem;
+            }
+        
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }

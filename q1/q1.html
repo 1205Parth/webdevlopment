@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Studio</title>
+    <link rel="stylesheet" href="q1.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- <img src="images.jpg"> -->
+    <header>
+        <hgroup>
+            <h1>Creative Studio</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#hero">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </hgroup>
+    </header>
+    <section id="hero" class="hero">
+        <h1>Welcome to Creative Studio</h1>
+        <a href="#contact">Search</a>
+    </section>
+    <main>
+        <section id="about" class="about container">
+            <h2>About Us</h2>
+            <p>Welcome to Creative Studio, where your creative vision becomes reality. Our expert team is dedicated to transforming
+            your ideas into captivating visuals and memorable experiences. At Creative Studio, we're passionate about crafting
+            compelling and inspiring content that stands out.</p>
+            <!-- <img src="about-image.jpg" alt="Creative Studio Team"> -->
+        </section>
+        <section id="services" class="services container">
+            <!-- <img src="images.jpg"> -->
+            <div class="service">
+                <img class="lalu" src="design.jpg" alt="Design Icon">
+                <h3>Design</h3>
+                <p>Custom design solutions that are both innovative and captivating, crafted to meet your unique needs.</p>
+            </div>
+            <div class="service">
+                <img class="lalu" src="devlopment.jpg" alt="Development Icon">
+                <h3>Development</h3>
+                <p>Premium web and app development services designed to elevate your digital presence.</p>
+            </div>
+            <div class="service">
+                <img class="lalu" src="marketing.jpg" alt="Marketing Icon">
+                <h3>Marketing</h3>
+                <p>Powerful marketing strategies to amplify your brand and connect with your target audience.</p>
+            </div>
+        </section>
+        <section id="contact" class="contact container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Creative Studio. All rights reserved.</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Twitter</a> |
+            <a href="#">Instagram</a>
+        </p>
+    </footer>
+</body>
+
+</html>
